@@ -1,5 +1,9 @@
 # ATF and u-boot for mt798x
 
+欢迎使用中文提交commit 
+感谢hanwckf的mt798x的uboot库
+库里加上了mtk20250711的分支
+
 ## About bl-mt798x
 - https://cmi.hanwckf.top/p/mt798x-uboot-usage
 
