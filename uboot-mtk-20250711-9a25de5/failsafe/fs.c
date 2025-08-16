@@ -5,8 +5,8 @@
  * Author: Weijie Gao <weijie.gao@mediatek.com>
  */
 
-#include <linker_lists.h>
-#include <string.h>
+#include <common.h>
+
 #include "fs.h"
 
 const struct fs_desc *fs_find_file(const char *path)

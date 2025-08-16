@@ -3101,6 +3101,17 @@ config CMD_MESON
 	help
 	  Enable useful commands for the Meson Soc family developed by Amlogic Inc.
 
+config CMD_GL_BTN
+	bool "GL-iNet button check command"
+	depends on BUTTON
+	default n
+	select POLLER
+
+config CMD_SHOW_MTD_LAYOUT
+	bool "Show mtd layout command"
+	depends on OF_LIBFDT
+	default n
+
 config CMD_SPAWN
 	bool "spawn and wait commands"
 	depends on UTHREAD

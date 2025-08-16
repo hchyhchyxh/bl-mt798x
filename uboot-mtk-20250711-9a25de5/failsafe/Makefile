@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 
-ifeq ($(CONFIG_XPL_BUILD),)
+ifeq ($(CONFIG_SPL_BUILD),)
 
 obj-y += fsdata/
 
