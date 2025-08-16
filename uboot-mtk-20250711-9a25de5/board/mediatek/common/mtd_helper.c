@@ -790,7 +790,7 @@ static int read_ubi_volume(const char *volume, void *buff, size_t size)
 
 #ifdef CONFIG_MEDIATEK_MULTI_MTD_LAYOUT
 
-+static int write_ubi2_tar_image_separate(const void *data, size_t size,
+static int write_ubi2_tar_image_separate(const void *data, size_t size,
 				struct mtd_info *mtd_kernel, struct mtd_info *mtd_rootfs)
 {
 	const void *kernel_data, *rootfs_data;
@@ -1547,7 +1547,7 @@ int mtd_upgrade_image(const void *data, size_t size)
 	struct mtd_info *mtd_ubikernel, *mtd_ubirootfs;
 	const char *ubi_kernel_part;
 	const char *ubi_rootfs_part;
-+#endif
+#endif
 #endif /* CONFIG_CMD_UBI */
 
 	gen_mtd_probe_devices();
@@ -1652,7 +1652,7 @@ int mtd_boot_image(bool do_boot)
 	else
 		mtd_kernel = NULL;
 
-+#ifdef CONFIG_MEDIATEK_MULTI_MTD_LAYOUT
+#ifdef CONFIG_MEDIATEK_MULTI_MTD_LAYOUT
 	ubi_boot_part = env_get("ubi_boot_part");
 	if (!ubi_boot_part)
 		ubi_boot_part = PART_UBI_NAME;
