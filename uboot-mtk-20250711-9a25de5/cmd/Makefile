@@ -239,6 +239,7 @@ obj-$(CONFIG_CMD_AVB) += avb.o
 obj-$(CONFIG_CMD_SCP03) += scp03.o
 
 obj-$(CONFIG_CMD_GL_BTN) += glbtn.o led_blink.o
+obj-$(CONFIG_CMD_SHOW_MTD_LAYOUT) += showlayout.o
 obj-$(CONFIG_HUSH_SELECTABLE) += cli.o
 
 obj-$(CONFIG_CMD_SPAWN) += spawn.o
